@@ -1,10 +1,11 @@
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Beers from "./pages/Beers";
+import Beers from "./pages/Beers/Beers";
 import RandomBeer from "./pages/RandomBeer";
 import NewBeer from "./pages/NewBeers";
 import Homepage from "./pages/Homepage/Homepage";
 import Navigation from "./components/Navigation/Navigation";
+import BeerDetails from "./pages/BeerDetails/BeerDetails";
 
 function App({ hideLink }) {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App({ hideLink }) {
       <Routes>
         <Route path="/" element={<Homepage navLink></Homepage>}></Route>
         <Route path="/beers" element={<Beers></Beers>}></Route>
+        <Route path="/beers/:id" element={<BeerDetails></BeerDetails>}></Route>
         <Route path="/random-beer" element={<RandomBeer></RandomBeer>}></Route>
         <Route path="/new-beer" element={<NewBeer></NewBeer>}></Route>
       </Routes>
