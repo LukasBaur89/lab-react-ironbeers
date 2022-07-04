@@ -20,7 +20,7 @@ function Homepage() {
         </p>
       </div>
       <div>
-        <NavLink className="navigation" to="/random-beer">
+        <NavLink className="navigation" to="/beers/random/">
           <h1>Random Beer</h1>
           <img src={randomBeer} alt="" />
         </NavLink>
@@ -32,7 +32,7 @@ function Homepage() {
         </p>
       </div>
       <div>
-        <NavLink className="navigation" to="/new-beer">
+        <NavLink className="navigation" to="/new">
           <h1>New Beer</h1>
           <img src={newBeer} alt="" />
         </NavLink>

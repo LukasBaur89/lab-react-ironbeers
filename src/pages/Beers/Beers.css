@@ -1,3 +1,7 @@
+h1 {
+  margin: 0.5em;
+}
+
 .beers {
   display: flex;
   background-color: white;
@@ -21,7 +25,5 @@
 
 .beersLink {
   text-decoration: none;
-}
-.beersLink h2 {
   color: black;
 }

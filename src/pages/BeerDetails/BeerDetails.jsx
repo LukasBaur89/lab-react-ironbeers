@@ -16,7 +16,7 @@ function BeerDetails() {
           `https://ih-beers-api2.herokuapp.com/beers/${id}`
         );
         setDetails(response.data);
-        console.log(response.data);
+        /* console.log(response.data); */
       } catch (error) {
         console.log(error);
       }
